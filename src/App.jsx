@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import Form from "./components/Form";
+import Footer from "./components/Footer";
 
 import { selectParas } from "./redux/paras";
 import { useSelector } from "react-redux";
@@ -16,6 +17,7 @@ function App() {
           <p key={index}>{para}</p>
         ))}
       </div>
+      <Footer />
     </div>
   )
 }
